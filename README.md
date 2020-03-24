@@ -4,7 +4,7 @@ Many people enjoy doing crosswords with their friends and family. But self-isola
 
 Note that this version is not mobile friendly.
 
-The project is designed as a single-page application written in [elm](https://elm-lang.org/). The application reads JSON files of exisiting crosswords that are available online (such as [here](https://www.xwordinfo.com/JSON/) and [here](https://github.com/doshea/nyt_crosswords). The elm application talks to a back-end [Flask-SocketIO](https://flask-socketio.readthedocs.io/en/latest/) using [Redis](https://redis.io/) as a cache storing system. Once a connection is made, the crossword is downloaded from a REST interface, and the real-time updates use websockets. To get the look-and-feel just right, I made some slight modifications to the [Milligram](https://milligram.io/) css framework.
+The project is designed as a single-page application written in [elm](https://elm-lang.org/). The application reads JSON files of exisiting crosswords that are available online (such as [here](https://www.xwordinfo.com/JSON/) and [here](https://github.com/doshea/nyt_crosswords)). The elm application talks to a back-end [Flask-SocketIO](https://flask-socketio.readthedocs.io/en/latest/) using [Redis](https://redis.io/) as a cache storing system. Once a connection is made, the crossword is downloaded from a REST interface, and the real-time updates use websockets. To get the look-and-feel just right, I made some slight modifications to the [Milligram](https://milligram.io/) css framework.
 
 ## User instructions
 
