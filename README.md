@@ -29,7 +29,7 @@ The project is designed as a single-page application written in [elm](https://el
 
 # Known issues
 
-Not so much a bug per se, but I can't figure out why the `Cmd` associated with `KeyDown` in the `update` function doesn't fire when the `Msg` is interpreted. One would expec the `Cmd` to fire once the model is updated, not on the next model update cycle. This means that your information only gets broadcasted when the next event fires. If anyone knows why, please let me know!
+It turns out that the (Model, Cmd Msg) portion of the update cycle of Elm won't fire the Cmd if there is conditional logic. This version of the code will only emit your inputted information (position, letter, etc.) as the next event happens. This is a minor annoyance, but it's still very much useable.
 
 
 
